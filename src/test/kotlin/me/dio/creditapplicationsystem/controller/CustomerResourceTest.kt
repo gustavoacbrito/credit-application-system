@@ -250,14 +250,14 @@ class CustomerResourceTest {
 
 
   private fun builderCustomerDto(
-    firstName: String = "Cami",
-    lastName: String = "Cavalcante",
-    cpf: String = "28475934625",
-    email: String = "camila@email.com",
+    firstName: String = "Gustavo",
+    lastName: String = "Brito",
+    cpf: String = "12345678910",
+    email: String = "eu@email.com",
     income: BigDecimal = BigDecimal.valueOf(1000.0),
     password: String = "1234",
-    zipCode: String = "000000",
-    street: String = "Rua da Cami, 123",
+    zipCode: String = "00000-00",
+    street: String = "Rua que eu moro, 123",
   ) = CustomerDto(
     firstName = firstName,
     lastName = lastName,
@@ -270,11 +270,11 @@ class CustomerResourceTest {
   )
 
   private fun builderCustomerUpdateDto(
-    firstName: String = "CamiUpdate",
-    lastName: String = "CavalcanteUpdate",
+    firstName: String = "GustUpdate",
+    lastName: String = "BritoUp",
     income: BigDecimal = BigDecimal.valueOf(5000.0),
-    zipCode: String = "45656",
-    street: String = "Rua Updated"
+    zipCode: String = "85697-852",
+    street: String = "Updated Street"
   ): CustomerUpdateDto = CustomerUpdateDto(
     firstName = firstName,
     lastName = lastName,
