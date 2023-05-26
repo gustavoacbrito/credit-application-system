@@ -1,4 +1,4 @@
-package me.dio.credit.application.system.service
+package me.dio.creditapplicationsystem.service
 
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
@@ -15,7 +15,6 @@ import me.dio.creditapplicationsystem.service.impl.CustomerService
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import org.springframework.test.context.ActiveProfiles
 import java.math.BigDecimal
 import java.util.*
 
@@ -82,13 +81,13 @@ class CustomerServiceTest {
 
 
   private fun buildCustomer(
-    firstName: String = "Cami",
-    lastName: String = "Cavalcante",
-    cpf: String = "28475934625",
-    email: String = "camila@gmail.com",
+    firstName: String = "Gustavo",
+    lastName: String = "Brito",
+    cpf: String = "12345678910",
+    email: String = "eu@gmail.com",
     password: String = "12345",
     zipCode: String = "12345",
-    street: String = "Rua da Cami",
+    street: String = "Rua que eu moro",
     income: BigDecimal = BigDecimal.valueOf(1000.0),
     id: Long = 1L
   ) = Customer(
